@@ -78,6 +78,11 @@ header .navbar a:hover {
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
 }
 
+header.sticky {
+    background: #fff;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
 #menu {
     font-size: 3rem;
     color: var(--azul);
@@ -143,6 +148,70 @@ header .navbar a:hover {
     padding: 1rem;
 }
 
+.prevencao .box-container .box h3 {
+    color: var(--azul);
+    font-size: 2rem;
+}
+
+.prevencao .box-container .box p {
+    color: var(--azul-escuro);
+    font-size: 1.4rem;
+    padding: 1rem;
+}
+
+.prevencao .box-container .box:hover {
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+.sintomas {
+    background: url(../img/background-img.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.sintomas .column {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sintomas .column .main-image img {
+    width: 43vh;
+}
+
+.sintomas .column .box-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.sintomas .column .box-container .box {
+    margin: 1rem;
+    text-align: center;
+}
+
+.sintomas .column .box-container .box img {
+    width: 20rem;
+    padding: 1rem;
+}
+
+.sintomas .column .box-container .box h3 {
+    font-size: 2rem;
+    color: var(--azul); 
+}
+
+
+
+
+
+
+
+
+
+
+
 /* Media Queries */
 
 @media (max-width:1200px) {
@@ -154,6 +223,11 @@ header .navbar a:hover {
 }
 
 @media (max-width:991px) {
+
+    section {
+        padding: 1rem 3%;
+        padding-top: 8rem;
+    }
 
     #menu {
         display: block;
@@ -186,6 +260,10 @@ header .navbar a:hover {
     .fa-times {
         transform: rotate(180deg);
     }
+
+    .sintomas .column .main-image img {
+        display: none;
+    }
 }
 
 @media (max-width:768px) {
@@ -211,5 +289,9 @@ header .navbar a:hover {
     
     .home .content h3 {
         font-size: 2.5rem;
+    }
+
+    .sintomas .column .box-container .box img {
+        width: 14rem;
     }
 }
